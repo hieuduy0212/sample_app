@@ -50,6 +50,7 @@ vi:
       log_in: "Đăng nhập"
       new_user: "Người dùng mới?"
       password: "Mật khẩu"
+      remember_me: "Ghi nhớ đăng nhập"
     create:
       incorrect: "Thông tin đăng nhập chưa đúng"
 
