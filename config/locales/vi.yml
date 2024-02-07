@@ -8,36 +8,55 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+
   topic: "Hướng dẫn Ruby on Rails"
   sample_app: "Ứng dụng mẫu"
+
+  layouts:
+    header:
+      nav:
+        home: "Trang chủ"
+        help: "Hỗ trợ"
+        account: "Tài khoản"
+        profile: "Thông tin cá nhân"
+        setting: "Cài đặt"
+        log_out: "Đăng xuất"
+        log_in: "Đăng nhập"
+        english: "Tiếng anh"
+        vietnamese: "Tiếng việt"
+
   static_pages:
-    nav:
-      home: "Trang chủ"
-      help: "Hỗ trợ"
-      english: "Tiếng anh"
-      vietnamese: "Tiếng việt"
-      login: "Đăng nhập"
     home:
       welcome: "Chào mừng đến với Ứng dụng mẫu"
       introduction: "Đây là trang chủ của"
-    title:
-      base_title: "Hướng dẫn Rails cùng ứng dụng mẫu"
-    sign_in:
-      now: "Đăng nhập ngay!"
-    sign_up:
-      now: "Đăng ký ngay!"
+      sign_up_now: "Đăng ký ngay!"
     help:
       help_page: "Hướng dẫn Rails cùng trang hỗ trợ"
       tutorial_book: "sách hướng dẫn Ruby on Rails"
       get_help_on: "Xem hướng dẫn RoR tại"
       to_get_sample_app: "Để xem trợ giúp trong ứng dụng mẫu, xem"
-  sign_up_page:
-    sign_up: "Đăng ký"
-    create_my_account: "Tạo tài khoản"
-    success: "Tạo tài khoản thành công"
-  error_message:
-    the_form_contains: "Có"
-    amount:
-      one: "1 lỗi"
-      other: "%{count} lỗi"
-    not_found_user: "Không tìm thấy user"
+    title:
+      base_title: "Hướng dẫn Rails cùng ứng dụng mẫu"
+
+  users:
+    new:
+      sign_up: "Đăng ký"
+      create_my_account: "Tạo tài khoản"
+    create:
+      success: "Tạo tài khoản thành công"
+
+  sessions:
+    new:
+      log_in: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      password: "Mật khẩu"
+    create:
+      incorrect: "Thông tin đăng nhập chưa đúng"
+
+  shared:
+    error_messages:
+      the_form_contains: "Có"
+      amount:
+        one: "1 lỗi"
+        other: "%{count} lỗi"
+      not_found_user: "Không tìm thấy người dùng"

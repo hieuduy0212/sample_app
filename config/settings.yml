@@ -2,3 +2,6 @@ validates:
   email:
     regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
     length: 255
+link:
+  rails_help: http://www.railstutorial.org/help
+  rails_book: http://www.railstutorial.org/book
