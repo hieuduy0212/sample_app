@@ -1,8 +1,8 @@
 <% if @user.errors.any? %>
   <div id="error_explanation">
     <div class="alert alert-danger">
-      <%= t "error_message.the_form_contains" %>
-      <%= t("error_message.amount", count: @user.errors.count) %>.
+      <%= t ".the_form_contains" %>
+      <%= t(".amount", count: @user.errors.count) %>.
     </div>
     <ul>
       <% @user.errors.full_messages.each do |msg| %>
