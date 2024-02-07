@@ -1,4 +1,13 @@
 class User < ApplicationRecord
+  def self.digest string
+    cost = if ActiveModel::SecurePassword.min_cost
+             BCrypt::Engine::MIN_COST
+           else
+             BCrypt::Engine.cost
+           end
+    BCrypt::Password.create string, cost:
+  end
+
   validates :email, format: {with: Regexp.new(Settings.validates.email.regex, "i")}
   validates :email, length: {maximum: Settings.validates.email.length}
   validates :email, presence: true
