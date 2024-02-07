@@ -1,4 +1,13 @@
 en:
+  activerecord:
+    models:
+      user: "User"
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirmation"
   topic: "Ruby on Rails Tutorial"
   sample_app: "Sample_App"
   static_pages:
@@ -13,6 +22,8 @@ en:
       introduction: "This is the home page for the"
     title:
       base_title: "Ruby on Rails Tutorial with Sample App"
+    sign_in:
+      now: "Sign in now!"
     sign_up:
       now: "Sign up now!"
     help:
@@ -20,3 +31,13 @@ en:
       tutorial_book: "Ruby on Rails Tutorial book"
       get_help_on: "Get help on the Ruby on Rails tutorial at the"
       to_get_sample_app: "To get help on this sample app, see the"
+  sign_up_page:
+    sign_up: "Sign up"
+    create_my_account: "Create"
+    success: "User created successfully"
+  error_message:
+    the_form_contains: "The form contains"
+    amount:
+      one: "1 error"
+      other: "%{count} errors"
+    not_found_user: "Not found user"
