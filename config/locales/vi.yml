@@ -1,0 +1,22 @@
+vi:
+  topic: "Hướng dẫn Ruby on Rails"
+  sample_app: "Ứng dụng mẫu"
+  static_pages:
+    nav:
+      home: "Trang chủ"
+      help: "Hỗ trợ"
+      english: "Tiếng anh"
+      vietnamese: "Tiếng việt"
+      login: "Đăng nhập"
+    home:
+      welcome: "Chào mừng đến với Ứng dụng mẫu"
+      introduction: "Đây là trang chủ của"
+    title:
+      base_title: "Hướng dẫn Rails cùng ứng dụng mẫu"
+    sign_up:
+      now: "Đăng nhập ngay!"
+    help:
+      help_page: "Hướng dẫn Rails cùng trang hỗ trợ"
+      tutorial_book: "sách hướng dẫn Ruby on Rails"
+      get_help_on: "Xem hướng dẫn RoR tại"
+      to_get_sample_app: "Để xem trợ giúp trong ứng dụng mẫu, xem"
