@@ -4,8 +4,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "config"
 gem "rails", "~> 7.1.3"
-
 gem "rails-i18n"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
@@ -27,6 +27,7 @@ gem "turbo-rails"
 gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem "bcrypt"
 gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production

@@ -1,0 +1,4 @@
+validates:
+  email:
+    regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
+    length: 255
