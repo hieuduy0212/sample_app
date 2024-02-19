@@ -3,6 +3,7 @@ class User < ApplicationRecord
   validates :email, length: {maximum: Settings.validates.email.length}
   validates :email, presence: true
   validates :email, uniqueness: {case_sensitive: false}
+  validates :name, presence: true
 
   has_secure_password
 
