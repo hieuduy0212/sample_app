@@ -72,6 +72,17 @@ en:
       confirm_delete: "Are you sure?"
     show:
       microposts: "Microposts"
+    following:
+      title: "Following"
+    followers:
+      title: "Followers"
+    follow:
+      button_text: "Follow"
+    unfollow:
+      button_text: "Unfollow"
+    show_follow:
+      microposts: "Microposts:"
+      view_profile: "View my profile"
 
   sessions:
     new:
@@ -101,6 +112,9 @@ en:
     micropost_form:
       placeholder: "Compose new micropost..."
       button_text: "Post"
+    stats:
+      following: "Following"
+      followers: "Followers"
 
   account_activations:
     edit:
