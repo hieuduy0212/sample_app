@@ -5,7 +5,9 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.feed, items: Settings.page_5
+  end
 
   def index
     @pagy, @users = pagy User.order_by_name, items: Settings.page_10
@@ -59,14 +61,6 @@ class UsersController < ApplicationController
 
     flash[:warning] = t "shared.error_messages.not_found_user"
     redirect_to root_path
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    store_location
-    flash[:danger] = t "shared.error_messages.please_log_in"
-    redirect_to login_url
   end
 
   def correct_user

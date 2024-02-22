@@ -16,6 +16,8 @@ class User < ApplicationRecord
 
   scope :order_by_name, ->{order :name}
 
+  has_many :microposts, dependent: :destroy
+
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -69,6 +71,10 @@ class User < ApplicationRecord
 
   def password_reset_expired?
     reset_sent_at < 2.hours.ago
+  end
+
+  def feed
+    microposts.newest
   end
 
   private

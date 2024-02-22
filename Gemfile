@@ -4,9 +4,12 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "3.3.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem "active_storage_validations"
 gem "config"
 gem "faker"
 gem "figaro"
+gem "i18n-js", "~>3.9.2"
+gem "image_processing"
 gem "pagy"
 gem "rails", "~> 7.1.3"
 gem "rails-i18n"

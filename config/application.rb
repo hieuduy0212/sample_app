@@ -12,5 +12,8 @@ module RailsTutorial
     config.i18n.default_locale = :en
 
     config.logger = Logger.new(STDOUT)
+
+    config.active_storage.variant_processor = :mini_magick
+    config.middleware.use I18n::JS::Middleware
   end
 end
