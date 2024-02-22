@@ -43,7 +43,7 @@ en:
       sign_up: "Sign up"
       create_my_account: "Create"
     create:
-      success: "User created successfully"
+      success: "User created successfully. Please check your email to activate account."
     edit:
       title: "Update profile"
       update: "Update information"
@@ -67,6 +67,7 @@ en:
       remember_me: "Remember me"
     create:
       incorrect: "Incorrect email or password"
+      not_activated: "Account has not been activated"
 
   shared:
     error_messages:
@@ -77,3 +78,15 @@ en:
       not_found_user: "Not found user"
       please_log_in: "Login is required!"
       forbidden: "You do not have permission to do this!"
+
+  account_activations:
+    edit:
+      success: "Activate successfully!"
+      failed: "Activate failed!"
+
+  user_mailer:
+    account_activation:
+      active_subject: "Account activation"
+    hi: "Hi"
+    welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+    activate: "Activate"

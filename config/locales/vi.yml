@@ -43,7 +43,7 @@ vi:
       sign_up: "Đăng ký"
       create_my_account: "Tạo tài khoản"
     create:
-      success: "Tạo tài khoản thành công"
+      success: "Tạo tài khoản thành công. Vui lòng kiểm tra email để kích hoạt tài khoản."
     edit:
       title: "Sửa thông tin người dùng"
       update: "Cập nhật thông tin"
@@ -67,6 +67,7 @@ vi:
       remember_me: "Ghi nhớ đăng nhập"
     create:
       incorrect: "Thông tin đăng nhập chưa đúng"
+      not_activated: "Tài khoản chưa kích hoạt"
 
   shared:
     error_messages:
@@ -77,3 +78,15 @@ vi:
       not_found_user: "Không tìm thấy người dùng"
       please_log_in: "Vui lòng đăng nhập!"
       forbidden: "Bạn không được phép thực hiện!"
+
+  account_activations:
+    edit:
+      success: "Kích hoạt tài khoản thành công!"
+      failed: "Kích hoạt thất bại!"
+
+  user_mailer:
+    account_activation:
+      active_subject: "Kích hoạt tài khoản"
+    hi: "Xin chào"
+    welcome: "Chào mừng bạn đến với Sample App. Click vào linh dưới để kích hoạt tài khoản:"
+    activate: "Kích hoạt"
