@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: [:show]
+  # action filter
+  before_action :find_user, only: %i(show)
   def show; end
 
   def new
@@ -9,7 +10,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      flash[:success] = t "sign_up_page.success"
+      reset_session
+      flash[:success] = t ".success"
+      log_in @user
       redirect_to @user
     else
       render :new, status: :unprocessable_entity
@@ -26,7 +29,7 @@ class UsersController < ApplicationController
     @user = User.find_by id: params[:id]
     return if @user
 
-    flash[:warning] = t "error_message.not_found_user"
+    flash[:warning] = t "shared.error_messages.not_found_user"
     redirect_to root_path
   end
 end
