@@ -50,6 +50,7 @@ en:
       log_in: "Log in"
       new_user: "New user?"
       password: "Password"
+      remember_me: "Remember me"
     create:
       incorrect: "Incorrect email or password"
 
