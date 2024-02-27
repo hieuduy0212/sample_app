@@ -1,19 +1,17 @@
 class User < ApplicationRecord
-  validates :email, presence: true,
-    length: {maximum: Settings[:validates][:email][:length]},
-    format: {with: Regexp.new(Settings[:validates][:email][:regex], "i")},
-    uniqueness: {case_sensitive: false}
+  validates :email, format: {
+    with: Regexp.new(Settings.validates.email.regex, "i")
+  }
+  validates :email, length: {maximum: Settings.validates.email.length}
+  validates :email, presence: true
+  validates :email, uniqueness: {case_sensitive: false}
   validates :name, presence: true
-  validates :password, presence: true,
-    length: {minimum: Settings.digits.digit_6}, allow_nil: true
 
   before_save :downcase_email
 
   has_secure_password
 
   attr_accessor :remember_token
-
-  scope :order_by_name, ->{order :name}
 
   class << self
     def digest string

@@ -44,20 +44,6 @@ en:
       create_my_account: "Create"
     create:
       success: "User created successfully"
-    edit:
-      title: "Update profile"
-      update: "Update information"
-      change: "Change"
-    update:
-      success: "Update successfully!"
-    index:
-      title: "All users"
-    destroy:
-      success: "Delete successfully!"
-      failed: "Delete failed!"
-    user:
-      delete: "Delete"
-      confirm_delete: "Are you sure?"
 
   sessions:
     new:
@@ -75,5 +61,3 @@ en:
         one: "1 error"
         other: "%{count} errors"
       not_found_user: "Not found user"
-      please_log_in: "Login is required!"
-      forbidden: "You do not have permission to do this!"

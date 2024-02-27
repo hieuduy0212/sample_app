@@ -5,9 +5,9 @@ Rails.application.routes.draw do
 
     get "static_pages/home"
     get "static_pages/help"
-
     get "/signup", to: "users#new"
-    resources :users, except: :new
+    post "/signup", to: "users#create"
+    resources :users, only: :show
 
     get "/login", to: "sessions#new" # get log in page
     post "/login", to: "sessions#create" # do log in

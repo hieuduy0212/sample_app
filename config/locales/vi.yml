@@ -44,20 +44,6 @@ vi:
       create_my_account: "Tạo tài khoản"
     create:
       success: "Tạo tài khoản thành công"
-    edit:
-      title: "Sửa thông tin người dùng"
-      update: "Cập nhật thông tin"
-      change: "Thay đổi"
-    update:
-      success: "Cập nhật thông tin thành công!"
-    index:
-      title: "Danh sách người dùng"
-    destroy:
-      success: "Xóa thành công!"
-      failed: "Xóa thất bại!"
-    user:
-      delete: "Xóa"
-      confirm_delete: "Bạn chắc chắn chưa?"
 
   sessions:
     new:
@@ -75,5 +61,3 @@ vi:
         one: "1 lỗi"
         other: "%{count} lỗi"
       not_found_user: "Không tìm thấy người dùng"
-      please_log_in: "Vui lòng đăng nhập!"
-      forbidden: "Bạn không được phép thực hiện!"
