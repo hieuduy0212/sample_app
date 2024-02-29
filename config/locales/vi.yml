@@ -65,6 +65,7 @@ vi:
       new_user: "Người dùng mới?"
       password: "Mật khẩu"
       remember_me: "Ghi nhớ đăng nhập"
+      forgot_password: "(Quên mật khẩu)"
     create:
       incorrect: "Thông tin đăng nhập chưa đúng"
       not_activated: "Tài khoản chưa kích hoạt"
@@ -90,3 +91,26 @@ vi:
     hi: "Xin chào"
     welcome: "Chào mừng bạn đến với Sample App. Click vào linh dưới để kích hoạt tài khoản:"
     activate: "Kích hoạt"
+    password_reset:
+      reset_subject: "Khôi phục mật khẩu"
+      to_reset_password: "Để khôi phục mật khẩu, click vào liên kết dưới đây:"
+      info_1: "Liên kết này sẽ hết hạn sau hai giờ."
+      info_2: "Nếu bạn không yêu cầu đặt lại mật khẩu của mình, vui lòng bỏ qua email này và mật khẩu của bạn sẽ vẫn như cũ."
+
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      submit: "Gửi"
+    create:
+      info: "Email hợp lệ. Vui lòng kiểm tra email để thực hiện khôi phục mật khẩu"
+      danger: "Email không hợp lệ. Vui lòng kiểm tra lại thông tin!"
+    update:
+      blank_password: "Mật khẩu không được để trống!"
+      success: "Cập nhật mật khẩu thành công"
+    valid_user:
+      danger: "Tài khoản chưa kích hoạt"
+    check_expiration:
+      danger: "Thông tin khôi phục mật khẩu đã hết hạn."
+    edit:
+      title: "Khôi phục mật khẩu"
+      button_text: "Cập nhật mật khẩu"

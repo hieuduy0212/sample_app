@@ -7,12 +7,14 @@ Rails.application.routes.draw do
     get "static_pages/help"
 
     get "/signup", to: "users#new"
-    resources :users, except: :new
+    post "/signup", to: "users#create"
+    resources :users, except: %i(new create)
 
     get "/login", to: "sessions#new" # get log in page
     post "/login", to: "sessions#create" # do log in
     delete "/logout", to: "sessions#destroy"
 
     resources :account_activations, only: :edit
+    resources :password_resets, except: %i(index destroy show)
   end
 end
