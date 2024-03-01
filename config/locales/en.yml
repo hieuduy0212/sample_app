@@ -2,12 +2,23 @@ en:
   activerecord:
     models:
       user: "User"
+      micropost: "Micropost"
     attributes:
       user:
         name: "Name"
         email: "Email"
         password: "Password"
         password_confirmation: "Confirmation"
+      micropost:
+        content: "Content"
+        image: "Image"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              content_type: ": Must be a valid image format(jpeg/gif/png)"
+              size: ": Image should be less than 5MB"
 
   topic: "Ruby on Rails Tutorial"
   sample_app: "Sample_App"
@@ -30,6 +41,7 @@ en:
       welcome: "Welcome to the Sample App"
       introduction: "This is the home page for the"
       sign_up_now: "Sign up now!"
+      feed: "Micropost Feed"
     help:
       help_page: "Rails Tutorial help page"
       tutorial_book: "Ruby on Rails Tutorial book"
@@ -58,6 +70,8 @@ en:
     user:
       delete: "Delete"
       confirm_delete: "Are you sure?"
+    show:
+      microposts: "Microposts"
 
   sessions:
     new:
@@ -79,6 +93,14 @@ en:
       not_found_user: "Not found user"
       please_log_in: "Login is required!"
       forbidden: "You do not have permission to do this!"
+    user_info:
+      my_profile: "View my profile"
+      micropost_count:
+        one: "1 post"
+        other: "%{count} posts"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      button_text: "Post"
 
   account_activations:
     edit:
@@ -114,3 +136,19 @@ en:
     edit:
       title: "Password reset"
       button_text: "Update password"
+
+  microposts:
+    create:
+      flash_create_success: "Create successfully!"
+    destroy:
+      flash_destroy_success: "Deleted micropost!"
+      flash_destroy_danger: "Delete failed!"
+    correct_user:
+      flash_current_user_danger: "Micropost invalid"
+    micropost:
+      posted: "Posted"
+      ago: "ago."
+      delete: "Delete"
+      confirm_delete: "Are you sure?"
+    errors:
+      alert_max_size: "Maximum file size is 5MB. Please choose a smaller file."

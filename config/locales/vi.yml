@@ -2,12 +2,23 @@ vi:
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Micropost"
     attributes:
       user:
         name: "Tên"
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
+      micropost:
+        content: "Nội dung"
+        image: "Ảnh"
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              content_type: ": Ảnh không đúng định dạng(jpeg/gif/png)"
+              size: ": Kích thước ảnh phải nhỏ hơn 5MB"
 
   topic: "Hướng dẫn Ruby on Rails"
   sample_app: "Ứng dụng mẫu"
@@ -30,6 +41,7 @@ vi:
       welcome: "Chào mừng đến với Ứng dụng mẫu"
       introduction: "Đây là trang chủ của"
       sign_up_now: "Đăng ký ngay!"
+      feed: "Bài đăng mới nhất"
     help:
       help_page: "Hướng dẫn Rails cùng trang hỗ trợ"
       tutorial_book: "sách hướng dẫn Ruby on Rails"
@@ -58,6 +70,8 @@ vi:
     user:
       delete: "Xóa"
       confirm_delete: "Bạn chắc chắn chưa?"
+    show:
+      microposts: "Bài đăng"
 
   sessions:
     new:
@@ -79,6 +93,14 @@ vi:
       not_found_user: "Không tìm thấy người dùng"
       please_log_in: "Vui lòng đăng nhập!"
       forbidden: "Bạn không được phép thực hiện!"
+    user_info:
+      my_profile: "Xem hồ sơ"
+      micropost_count:
+        one: "1 bài viết"
+        other: "%{count} bài viết"
+    micropost_form:
+      placeholder: "Viết bài mới..."
+      button_text: "Đăng"
 
   account_activations:
     edit:
@@ -114,3 +136,19 @@ vi:
     edit:
       title: "Khôi phục mật khẩu"
       button_text: "Cập nhật mật khẩu"
+
+  microposts:
+    create:
+      flash_create_success: "Tạo bài mới thành công!"
+    destroy:
+      flash_destroy_success: "Đã xóa!"
+      flash_destroy_danger: "Xóa bài thất bại!"
+    correct_user:
+      flash_current_user_danger: "Bài viết không khả dụng"
+    micropost:
+      posted: "Đã đăng"
+      ago: "trước."
+      delete: "Xóa"
+      confirm_delete: "Bạn muốn xóa bài đăng này?"
+    errors:
+      alert_max_size: "Kích thước tối đa là 5MB. Vui lòng chọn ảnh có kích thước nhỏ hơn."

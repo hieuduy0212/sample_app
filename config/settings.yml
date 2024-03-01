@@ -2,13 +2,19 @@ validates:
   email:
     regex: \A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z
     length: 255
+  img:
+    content_type: <%= %w(image/jpeg image/gif image/png) %>
+    max_size: <%= 5.megabytes %>
 link:
   rails_help: http://www.railstutorial.org/help
   rails_book: http://www.railstutorial.org/book
   rails_home: http://www.railstutorial.org/
 digits:
   digit_6: 6
+  digit_140: 140
 img:
   size_50: 50
   size_80: 80
+  size_250_250: [250, 250]
 page_10: 10
+page_5: 5
