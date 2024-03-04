@@ -77261,6 +77261,10 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
       "button_text": "Post",
       "placeholder": "Compose new micropost..."
     },
+    "stats": {
+      "followers": "Followers",
+      "following": "Following"
+    },
     "user_info": {
       "micropost_count": {
         "one": "1 post",
@@ -77331,6 +77335,15 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
       "title": "Update profile",
       "update": "Update information"
     },
+    "follow": {
+      "button_text": "Follow"
+    },
+    "followers": {
+      "title": "Followers"
+    },
+    "following": {
+      "title": "Following"
+    },
     "index": {
       "title": "All users"
     },
@@ -77340,6 +77353,13 @@ I18n.translations["en"] = I18n.extend((I18n.translations["en"] || {}), {
     },
     "show": {
       "microposts": "Microposts"
+    },
+    "show_follow": {
+      "microposts": "Microposts:",
+      "view_profile": "View my profile"
+    },
+    "unfollow": {
+      "button_text": "Unfollow"
     },
     "update": {
       "success": "Update successfully!"

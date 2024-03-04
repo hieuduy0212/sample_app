@@ -13,6 +13,7 @@ digits:
   digit_6: 6
   digit_140: 140
 img:
+  size_30: 30
   size_50: 50
   size_80: 80
   size_250_250: [250, 250]

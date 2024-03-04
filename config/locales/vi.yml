@@ -72,6 +72,17 @@ vi:
       confirm_delete: "Bạn chắc chắn chưa?"
     show:
       microposts: "Bài đăng"
+    following:
+      title: "Đang theo dõi"
+    followers:
+      title: "Người theo dõi"
+    follow:
+      button_text: "Theo dõi"
+    unfollow:
+      button_text: "Bỏ theo dõi"
+    show_follow:
+      microposts: "Các bài đăng:"
+      view_profile: "Xem thông tin"
 
   sessions:
     new:
@@ -101,6 +112,9 @@ vi:
     micropost_form:
       placeholder: "Viết bài mới..."
       button_text: "Đăng"
+    stats:
+      following: "Đang theo dõi"
+      followers: "Người theo dõi"
 
   account_activations:
     edit:

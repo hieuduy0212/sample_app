@@ -76974,6 +76974,10 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
       "button_text": "Đăng",
       "placeholder": "Viết bài mới..."
     },
+    "stats": {
+      "followers": "Người theo dõi",
+      "following": "Đang theo dõi"
+    },
     "user_info": {
       "micropost_count": {
         "one": "1 bài viết",
@@ -77044,6 +77048,15 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
       "title": "Sửa thông tin người dùng",
       "update": "Cập nhật thông tin"
     },
+    "follow": {
+      "button_text": "Theo dõi"
+    },
+    "followers": {
+      "title": "Người theo dõi"
+    },
+    "following": {
+      "title": "Đang theo dõi"
+    },
     "index": {
       "title": "Danh sách người dùng"
     },
@@ -77053,6 +77066,13 @@ I18n.translations["vi"] = I18n.extend((I18n.translations["vi"] || {}), {
     },
     "show": {
       "microposts": "Bài đăng"
+    },
+    "show_follow": {
+      "microposts": "Các bài đăng:",
+      "view_profile": "Xem thông tin"
+    },
+    "unfollow": {
+      "button_text": "Bỏ theo dõi"
     },
     "update": {
       "success": "Cập nhật thông tin thành công!"
